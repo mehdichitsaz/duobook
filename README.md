@@ -88,5 +88,3 @@ Questions or feedback: [chitsaz.mehdi77@gmail.com](mailto:chitsaz.mehdi77@gmail.
 ## Legal
 
 © 2026 Mehdi Chitsaz. All rights reserved. The device images use Apple’s product bezels and may not be reused.
-
-DuoBook is not affiliated with Apple. iPhone, iPhone Duo, Mac, MacBook, and Touch ID are trademarks of Apple Inc., registered in the U.S. and other countries.
