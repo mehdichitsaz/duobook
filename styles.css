@@ -29,7 +29,8 @@ a:hover { color: #fff; }
 header.site { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-weight: 650; font-size: 20px; }
 .brand img { width: 40px; height: 40px; border-radius: 10px; }
-nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 15px; }
+nav { display: flex; flex-wrap: nowrap; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 15px; white-space: nowrap; }
 nav a:hover { color: var(--text); }
 h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.05; margin: 0 0 14px; }
 h1 { font-size: clamp(44px, 7vw, 84px); font-weight: 750; }
@@ -73,4 +74,9 @@ footer.site a { color: var(--muted); margin-right: 18px; }
   .split.flip > :first-child { order: 0; }
   .cards { grid-template-columns: 1fr; }
   nav a { margin-left: 14px; }
+}
+@media (max-width: 420px) {
+  .brand { gap: 10px; font-size: 18px; }
+  .brand img { width: 34px; height: 34px; border-radius: 8px; }
+  nav a { margin-left: 12px; font-size: 14px; }
 }
