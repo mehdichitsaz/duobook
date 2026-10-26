@@ -83,7 +83,7 @@ Push to `main` to publish. The live site updates within a few minutes.
 
 ## Contact
 
-Questions or feedback: [chitsaz.mehdi77@gmail.com](mailto:chitsaz.mehdi77@gmail.com) or [@duobook.app](https://www.instagram.com/duobook.app/) on Instagram.
+Questions or feedback: [info@mehdichitsaz.com](mailto:info@mehdichitsaz.com) or [@duobook.app](https://www.instagram.com/duobook.app/) on Instagram.
 
 ## Legal
 
