@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Use DuoBook Away from Home – DuoBook</title>
+  <meta name="description" content="Turn on UPnP or NAT-PMP in your router so DuoBook can reach your Mac from anywhere.">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="../"><img src="../assets/icon.png" alt="">DuoBook</a>
+      <nav><a href="../mac/">Mac app</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav>
+    </header>
+
+    <article class="doc">
+      <h1>Use DuoBook away from home</h1>
+      <p>With <strong>Access from anywhere</strong> on, DuoBook Host asks your router to let your iPhone in from the internet. Routers do this with a setting called <strong>UPnP</strong> (sometimes “Universal Plug and Play”) or <strong>NAT-PMP</strong>. If DuoBook Host says <em>“Your router didn’t allow it”</em>, that setting is off. Turn it on once and you’re done.</p>
+
+      <h2>Turn it on</h2>
+      <ol>
+        <li>On your Mac, open DuoBook Host from the menu bar, then <strong>Settings</strong>, and click <strong>Open Router Settings</strong>. Your router’s page opens in your browser. (Or type its address yourself: often <code>192.168.1.1</code>, <code>192.168.0.1</code> or <code>10.0.0.1</code>.) Some routers are set up in their own app instead; see the list below.</li>
+        <li>Sign in. The password is usually on a sticker on the router, unless you changed it.</li>
+        <li>Find <strong>UPnP</strong> or <strong>NAT-PMP</strong>, turn it on, and save. Where it lives for common routers is below.</li>
+        <li>Back in DuoBook Host, turn <strong>Access from anywhere</strong> off and on again. It should now say your router forwards DuoBook.</li>
+        <li>Connect from your iPhone once at home. After that it finds your Mac from anywhere.</li>
+      </ol>
+
+      <h2>Where to find it</h2>
+      <p>Menus change between models and updates, so these are the usual places. If yours looks different, search the web for your router’s model and “UPnP”.</p>
+      <details><summary>Apple AirPort</summary>
+        <p>NAT-PMP is on by default. To check: AirPort Utility → select your base station → Edit → Network → <strong>Enable NAT Port Mapping Protocol</strong>.</p></details>
+      <details><summary>eero</summary>
+        <p>In the eero app: Settings → Network settings → Advanced settings → <strong>UPnP</strong>.</p></details>
+      <details><summary>Google Nest Wifi and Google Wifi</summary>
+        <p>In the Google Home app: Wi-Fi → Settings → Advanced networking → <strong>UPnP</strong>.</p></details>
+      <details><summary>NETGEAR (Nighthawk, Orbi)</summary>
+        <p>Go to <code>routerlogin.net</code> (Orbi: <code>orbilogin.com</code>) → Advanced → Advanced Setup → UPnP → <strong>Turn UPnP On</strong> → Apply.</p></details>
+      <details><summary>TP-Link (Archer, Deco)</summary>
+        <p>Archer: go to <code>tplinkwifi.net</code> → Advanced → NAT Forwarding → <strong>UPnP</strong>. Deco: in the Deco app, More → Advanced → <strong>UPnP</strong>.</p></details>
+      <details><summary>ASUS</summary>
+        <p>Go to <code>router.asus.com</code> → WAN → Internet Connection → <strong>Enable UPnP: Yes</strong> → Apply.</p></details>
+      <details><summary>Linksys</summary>
+        <p>Go to <code>myrouter.local</code> (or the Linksys app) → Connectivity → Administration → <strong>UPnP</strong>.</p></details>
+      <details><summary>FRITZ!Box</summary>
+        <p>Go to <code>fritz.box</code> → Internet → Permit Access → Port Sharing → edit your Mac → turn on <strong>Permit independent port sharing for this device</strong>.</p></details>
+      <details><summary>Xfinity, Rogers Ignite, Vidéotron Helix, Shaw</summary>
+        <p>These gateways share the same setup page. Go to <code>10.0.0.1</code> and sign in → Advanced → Device Discovery → <strong>UPnP: Enable</strong> → Save.</p></details>
+      <details><summary>Bell Home Hub</summary>
+        <p>Go to <code>192.168.2.1</code> → Advanced tools and settings → <strong>UPnP</strong>.</p></details>
+
+      <h2>Still not working?</h2>
+      <details><summary>You have two routers (your provider’s box plus your own)</summary>
+        <p>Then there are two routers in the way. Turn on UPnP on both, or set your provider’s box to <strong>bridge mode</strong> so only your own router is in charge. Your provider can help with bridge mode.</p></details>
+      <details><summary>Starlink, 5G home internet, or a shared address (CGNAT)</summary>
+        <p>Some providers share one internet address between many homes. Starlink and most 5G home internet plans (T-Mobile, Verizon and others) work this way, and some cable and fiber providers do too. Then no router setting can let DuoBook in. Ask your provider for a public IP address, or use a free VPN such as Tailscale on both your Mac and iPhone and type your Mac’s Tailscale address in DuoBook → Settings → Your Macs → your Mac → <strong>Direct address</strong>.</p></details>
+      <details><summary>There’s no UPnP or NAT-PMP setting</summary>
+        <p>Some office and building networks don’t offer it. Use the VPN option above instead.</p></details>
+
+      <h2>Is it safe?</h2>
+      <p>Only iPhones you paired can connect, and pairing only works on your own Wi-Fi with a code shown on both screens. Every connection is encrypted end to end. UPnP lets apps on your home network ask the router to open a door for themselves, so turn it on only if you trust the devices on your network. You can turn it off again any time.</p>
+      <p class="note">Questions? Write to <a href="mailto:info@mehdichitsaz.com">info@mehdichitsaz.com</a> with your router’s brand and model.</p>
+    </article>
+
+    <footer class="site">
+      <p><a href="../">Home</a><a href="../mac/">DuoBook Host for Mac</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></p>
+      <p>© 2026 Mehdi Chitsaz</p>
+    </footer>
+  </div>
+</body>
+</html>
