@@ -23,10 +23,18 @@
       <ol>
         <li>On your Mac, open DuoBook Host from the menu bar, then <strong>Settings</strong>, and click <strong>Open Router Settings</strong>. Your router’s page opens in your browser. (Or type its address yourself: often <code>192.168.1.1</code>, <code>192.168.0.1</code> or <code>10.0.0.1</code>.) Some routers are set up in their own app instead; see the list below.</li>
         <li>Sign in. The password is usually on a sticker on the router, unless you changed it.</li>
-        <li>Find <strong>UPnP</strong> or <strong>NAT-PMP</strong>, turn it on, and save. Where it lives for common routers is below.</li>
-        <li>Back in DuoBook Host, turn <strong>Access from anywhere</strong> off and on again. It should now say your router forwards DuoBook.</li>
-        <li>Connect from your iPhone once at home. After that it finds your Mac from anywhere.</li>
+        <li>Find <strong>UPnP</strong> or <strong>NAT-PMP</strong>, turn it on, and click <strong>Save</strong> (or Apply). Selecting Enable isn’t enough on most routers: nothing changes until you save. Where it lives for common routers is below. Leave the other settings on that page as they are.</li>
+        <li>Back in DuoBook Host, turn <strong>Access from anywhere</strong> off and on again. It should now say your router forwards DuoBook. If it still says your router didn’t allow it, quit DuoBook Host and open it again (it also tries again by itself every two minutes).</li>
+        <li>Connect from your iPhone <strong>once at home, on your Wi-Fi</strong>. That’s when your iPhone learns how to reach your Mac from outside. After that it connects from anywhere.</li>
       </ol>
+
+      <h2>Check that it works</h2>
+      <ol>
+        <li>On your iPhone, turn Wi-Fi off in the <strong>Settings</strong> app. Not in Control Center: that only disconnects from your network, and your iPhone can still reach a Mac in the same room directly, so the test would pass without the internet.</li>
+        <li>Open DuoBook and tap your Mac under <strong>Your Macs</strong>. (Don’t tap Pair: pairing only works at home, on the same Wi-Fi as the Mac.)</li>
+        <li>It connects over the internet. To see it, turn on DuoBook → Settings → <strong>Show connection speed</strong>: DuoBook shows “Internet” next to the speed instead of “Wi-Fi”. DuoBook Host’s menu says <em>Over the internet</em>.</li>
+      </ol>
+      <p>Away from home, Automatic quality uses a lighter picture to save cellular data. For a sharper one, set Quality to High in DuoBook’s Settings (or its ⋯ menu while connected).</p>
 
       <h2>Where to find it</h2>
       <p>Menus change between models and updates, so these are the usual places. If yours looks different, search the web for your router’s model and “UPnP”.</p>
@@ -47,7 +55,7 @@
       <details><summary>FRITZ!Box</summary>
         <p>Go to <code>fritz.box</code> → Internet → Permit Access → Port Sharing → edit your Mac → turn on <strong>Permit independent port sharing for this device</strong>.</p></details>
       <details><summary>Xfinity, Rogers Ignite, Vidéotron Helix, Shaw</summary>
-        <p>These gateways share the same setup page. Go to <code>10.0.0.1</code> and sign in → Advanced → Device Discovery → <strong>UPnP: Enable</strong> → Save.</p></details>
+        <p>These gateways share the same setup page. Go to <code>10.0.0.1</code> and sign in → Advanced → Device Discovery → <strong>UPnP: Enable</strong> → <strong>Save</strong>. Leave Advertisement Period, Time To Live and Zero Config as they are: DuoBook doesn’t need them. (Tested on a Vidéotron Helix Fi.)</p></details>
       <details><summary>Bell Home Hub</summary>
         <p>Go to <code>192.168.2.1</code> → Advanced tools and settings → <strong>UPnP</strong>.</p></details>
 
