@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <img src="assets/hero.png" width="720" alt="iPhone Duo folded like a laptop, showing a Mac desktop on the top screen and a keyboard and trackpad on the bottom screen">
+  <img src="assets/launch-hero.jpg" width="720" alt="An iPhone Duo folded like a laptop and an iPhone standing beside it, both showing a Mac desktop above a full keyboard and trackpad">
 </p>
 
 DuoBook turns iPhone Duo into a tiny laptop for your Mac. Fold it like a laptop: the top half shows your Mac’s screen, live, and the bottom half is a full keyboard and trackpad that control it, at home or from anywhere.
 
-**Coming soon to the App Store.** Follow [@duobook.app](https://www.instagram.com/duobook.app/) for launch day.
+**Free on the [App Store](https://apps.apple.com/app/id6826643457)**, for iPhone Duo and any iPhone with iOS 17. Follow [@duobook.app](https://www.instagram.com/duobook.app/) for what’s next.
 
 This repository is the source of the DuoBook website.
 
@@ -36,7 +36,7 @@ This repository is the source of the DuoBook website.
 - **Built-in demo.** No Mac nearby? Try DuoBook with a demo Mac right in the app.
 
 <p align="center">
-  <img src="assets/themes.png" width="820" alt="The six DuoBook keyboard themes">
+  <img src="assets/themes.jpg" width="820" alt="The six DuoBook keyboard themes">
 </p>
 
 ## Requirements
@@ -66,7 +66,9 @@ The website is plain HTML and CSS, served by GitHub Pages from the `main` branch
 |---|---|
 | `index.html` | Home page |
 | `mac/` | DuoBook Host download and setup page |
+| `beta/` | TestFlight beta page |
 | `support/` | Help and frequently asked questions |
+| `router/` | Guide to turning on UPnP for access from anywhere |
 | `privacy/` | Privacy policy |
 | `assets/` | Images and icons |
 | `downloads/DuoBook-Host.dmg` | The signed, notarized Mac app |
@@ -87,4 +89,4 @@ Questions or feedback: [info@mehdichitsaz.com](mailto:info@mehdichitsaz.com) or 
 
 ## Legal
 
-© 2026 Mehdi Chitsaz. All rights reserved. The device images use Apple’s product bezels and may not be reused.
+© 2026 Mehdi Chitsaz. All rights reserved.
