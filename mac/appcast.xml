@@ -1,7 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>DuoBook Host</title>
-    <link>https://mehdichitsaz.github.io/duobook/mac/</link>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DuoBook Host</title>
+        <link>https://mehdichitsaz.github.io/duobook/mac/</link>
+        <item>
+            <title>1.1</title>
+            <pubDate>Tue, 03 Nov 2026 10:58:28 -0500</pubDate>
+            <link>https://mehdichitsaz.github.io/duobook/mac/</link>
+            <sparkle:version>2611031056</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook-Host-1.1.zip" length="2980999" type="application/octet-stream" sparkle:edSignature="W3J1U7PpEu6hC7lmQu01yqvQhsyQi5PIDTSSWLN/vuXCaFV5qHfg3DknZDcalhBdTEE9ZAh0Vr/LgtUFXtDoDw=="/>
+        </item>
+    </channel>
 </rss>
