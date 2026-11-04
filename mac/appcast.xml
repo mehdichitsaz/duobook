@@ -4,6 +4,18 @@
         <title>DuoBook Host</title>
         <link>https://mehdichitsaz.github.io/duobook/mac/</link>
         <item>
+            <title>1.1.1</title>
+            <pubDate>Wed, 04 Nov 2026 10:11:04 -0500</pubDate>
+            <link>https://mehdichitsaz.github.io/duobook/mac/</link>
+            <sparkle:version>2611041009</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook-Host-1.1.1.zip" length="2983556" type="application/octet-stream" sparkle:edSignature="CeM9z/+C20K1+qclRxhX8f69N77lyJ/z8+5ikNmCB8zOvMTG3nOeOYFp1bofZFBXCSDz9exfRD67CC8XYSQqDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook%20Host2611041009-2611031056.delta" sparkle:deltaFrom="2611031056" length="136326" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="69/OItiC3lon8/GKgkQiRdn6FKJ7HcxV6uMw3V930A77DQ1Qurp7ZZAyGJjX5aBOaIiZ30kSTc+4X2mUsSDZBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1</title>
             <pubDate>Tue, 03 Nov 2026 10:58:28 -0500</pubDate>
             <link>https://mehdichitsaz.github.io/duobook/mac/</link>
