@@ -4,6 +4,19 @@
         <title>DuoBook Host</title>
         <link>https://mehdichitsaz.github.io/duobook/mac/</link>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Wed, 04 Nov 2026 20:53:27 -0500</pubDate>
+            <link>https://mehdichitsaz.github.io/duobook/mac/</link>
+            <sparkle:version>2611042052</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook-Host-1.1.2.zip" length="2984385" type="application/octet-stream" sparkle:edSignature="VlMkWT7N02U1LdY2y8iKQGOav16NqGNR7aw9ltV1KXIBtTRIhIZDoujuUZXDGsXMfHCK+mC9GvKX1FyL66CNBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook%20Host2611042052-2611041009.delta" sparkle:deltaFrom="2611041009" length="160318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hEHjekZaAs3nq2Y5+sAfggmuxneBcAC2fP5Gn2IHFjCuiCjtvwVJIIK0ZT+jA+FhAN1k5dNGXRbeiysoKij/Dg=="/>
+                <enclosure url="https://mehdichitsaz.github.io/duobook/downloads/updates/DuoBook%20Host2611042052-2611031056.delta" sparkle:deltaFrom="2611031056" length="163950" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MVQhNhCg9IlvB++c+8KrnheDPLCOMEvv/M/v2xQn4vSxoPyW8u2nuiuHO8mVRcDeHCW620lgruR9ioJ1KFgVDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Wed, 04 Nov 2026 10:11:04 -0500</pubDate>
             <link>https://mehdichitsaz.github.io/duobook/mac/</link>
