@@ -7,10 +7,10 @@
 <p align="center"><b>Your iPhone Duo is a laptop now.</b></p>
 
 <p align="center">
-  <a href="https://mehdichitsaz.github.io/duobook/">Website</a> ·
-  <a href="https://mehdichitsaz.github.io/duobook/mac/">Get DuoBook Host for Mac</a> ·
-  <a href="https://mehdichitsaz.github.io/duobook/support/">Support</a> ·
-  <a href="https://mehdichitsaz.github.io/duobook/privacy/">Privacy</a> ·
+  <a href="https://getduobook.com/">Website</a> ·
+  <a href="https://getduobook.com/mac/">Get DuoBook Host for Mac</a> ·
+  <a href="https://getduobook.com/support/">Support</a> ·
+  <a href="https://getduobook.com/privacy/">Privacy</a> ·
   <a href="https://www.instagram.com/duobook.app/">Instagram</a>
 </p>
 
@@ -47,7 +47,7 @@ This repository is the source of the DuoBook website.
 
 ## Get started
 
-1. [Download DuoBook Host](https://mehdichitsaz.github.io/duobook/mac/), open the file, and drag DuoBook Host to Applications.
+1. [Download DuoBook Host](https://getduobook.com/mac/), open the file, and drag DuoBook Host to Applications.
 2. Open it, then click **Allow** for Screen Recording and Accessibility when it asks.
 3. Open DuoBook on your iPhone, tap your Mac, check that the code matches on both screens, and click **Pair**.
 4. Open your iPhone Duo like a laptop and start typing.
@@ -56,7 +56,7 @@ To use your Mac away from home, turn on **Access from anywhere** in DuoBook Host
 
 ## Privacy
 
-DuoBook doesn’t collect any data. There are no accounts, analytics, or ads, and no server ever sees your screen. Your screen and input travel encrypted between your own devices, and your Mac’s address is kept in your own private iCloud. Read the full [privacy policy](https://mehdichitsaz.github.io/duobook/privacy/).
+DuoBook doesn’t collect any data. There are no accounts, analytics, or ads, and no server ever sees your screen. Your screen and input travel encrypted between your own devices, and your Mac’s address is kept in your own private iCloud. Read the full [privacy policy](https://getduobook.com/privacy/).
 
 ## About this repository
 
