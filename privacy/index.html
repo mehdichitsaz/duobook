@@ -25,9 +25,9 @@
 
     <article class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated October 24, 2026. Covers the DuoBook iPhone app and the DuoBook Host Mac app.</p>
+      <p class="updated">Last updated November 15, 2026. Covers the DuoBook iPhone app and the DuoBook Host Mac app.</p>
 
-      <p><strong>The short version:</strong> DuoBook collects no data. There’s no account, no analytics, no advertising, and no tracking. Your Mac’s screen, sound, and your typing go directly between your own iPhone and your own Mac, encrypted, and we can’t see any of it.</p>
+      <p><strong>The short version:</strong> DuoBook collects no data. There’s no account, no analytics, no advertising, and no tracking. Your Mac’s screen, sound, and your typing go between your own iPhone and your own Mac encrypted end to end (directly, or through DuoBook’s relay if you use DuoBook Anywhere), and we can’t see any of it.</p>
 
       <h2>What stays on your devices</h2>
       <ul>
@@ -49,11 +49,12 @@
       <ul>
         <li><strong>Your router.</strong> If you turn on “Access from anywhere”, DuoBook Host asks your home router (using the standard NAT-PMP or UPnP protocols) to forward one port to the Mac.</li>
         <li><strong>Your iCloud.</strong> While remote access is on, DuoBook Host saves a small record in the <em>private</em> iCloud database of your Apple Account: your Mac’s name, its current internet address and port, a relay address if you set one, a random identifier for your Mac, and when it was updated. Your iPhone reads it to find the Mac. Private iCloud data is only accessible to you; we can’t read it. The record is deleted when there’s nothing to share (remote access off).</li>
-        <li><strong>Relays (optional).</strong> If you set up a relay server, it passes along the encrypted connection without being able to read it. Like any internet server, it sees the two devices’ internet addresses and a random identifier; the relay software that comes with DuoBook logs only when sessions start and end (with a shortened identifier) and the address of malformed requests. Whoever runs the relay controls those logs.</li>
+        <li><strong>DuoBook Anywhere (optional subscription).</strong> If you subscribe, and only when your iPhone can’t reach your Mac directly, the connection goes through DuoBook’s relay server. It passes the encrypted connection along without being able to read it: it never sees your screen, sound, typing or files. To check the subscription, your iPhone shows the relay the App Store’s signed record of it; the relay checks Apple’s signature, that it’s for DuoBook Anywhere and that it hasn’t ended, uses its transaction number only to allow up to 4 connections at once, and keeps none of it after the connection ends. Like any internet server, the relay sees the two devices’ internet addresses while they’re connected. Its log records only that a Mac came online or that a session started and ended, without addresses or identifiers. DuoBook Host keeps your Mac reachable through the relay while its relay switch is on; you can turn it off in DuoBook Host. Payment is handled by Apple; we never see your payment details.</li>
+        <li><strong>Your own relay (optional).</strong> If you set up a relay server yourself, it passes along the encrypted connection without being able to read it. Like any internet server, it sees the two devices’ internet addresses and a random identifier; the relay software that comes with DuoBook logs only when sessions start and end (with a shortened identifier) and the address of malformed requests. Whoever runs the relay controls those logs.</li>
       </ul>
 
       <h2>What we collect</h2>
-      <p>Nothing. DuoBook has no servers that receive your data, contains no third-party analytics or advertising code, and doesn’t track you across apps or websites.</p>
+      <p>Nothing. DuoBook’s only server is the DuoBook Anywhere relay, which passes encrypted connections along and stores nothing about you. DuoBook contains no third-party analytics or advertising code, and doesn’t track you across apps or websites.</p>
       <p>If you’ve chosen to share diagnostics with app developers in your iPhone’s or Mac’s settings, Apple may give us anonymous crash reports. You can turn that off in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
 
       <h2>Children</h2>
