@@ -66,7 +66,6 @@ The website is plain HTML and CSS, served by GitHub Pages from the `main` branch
 |---|---|
 | `index.html` | Home page |
 | `mac/` | DuoBook Host download and setup page |
-| `beta/` | TestFlight beta page |
 | `support/` | Help and frequently asked questions |
 | `router/` | Guide to turning on UPnP for access from anywhere |
 | `privacy/` | Privacy policy |
