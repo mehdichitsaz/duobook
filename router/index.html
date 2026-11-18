@@ -28,14 +28,14 @@
     <article class="doc">
       <h1>Use DuoBook away from home</h1>
       <p>The easiest way is <strong>DuoBook Anywhere</strong>, in the app: it reaches your Mac from any network with nothing to set up. To do it yourself for free, read on.</p>
-      <p>With <strong>Access from anywhere</strong> on, DuoBook Host asks your router to let your iPhone in from the internet. Routers do this with a setting called <strong>UPnP</strong> (sometimes “Universal Plug and Play”) or <strong>NAT-PMP</strong>. If DuoBook Host says <em>“Your router didn’t allow it”</em>, that setting is off. Turn it on once and you’re done.</p>
+      <p>With <strong>Access from anywhere</strong> on, DuoBook Host asks your router to let your iPhone in from the internet. Routers do this with a setting called <strong>UPnP</strong> (sometimes “Universal Plug and Play”) or <strong>NAT-PMP</strong>. If DuoBook Host says <em>“Your router isn’t forwarding DuoBook”</em>, that setting is off. Turn it on once and you’re done. If UPnP is already on and DuoBook Host still says <em>Away from home stopped working</em>, see <a href="#upnp-on">UPnP is on, but it still doesn’t work</a>.</p>
 
       <h2>Turn it on</h2>
       <ol>
         <li>On your Mac, open DuoBook Host from the menu bar, then <strong>Settings</strong>, and click <strong>Open Router Settings</strong>. Your router’s page opens in your browser. (Or type its address yourself: often <code>192.168.1.1</code>, <code>192.168.0.1</code> or <code>10.0.0.1</code>.) Some routers are set up in their own app instead; see the list below.</li>
         <li>Sign in. The password is usually on a sticker on the router, unless you changed it.</li>
         <li>Find <strong>UPnP</strong> or <strong>NAT-PMP</strong>, turn it on, and click <strong>Save</strong> (or Apply). Selecting Enable isn’t enough on most routers: nothing changes until you save. Where it lives for common routers is below. Leave the other settings on that page as they are.</li>
-        <li>Back in DuoBook Host, turn <strong>Access from anywhere</strong> off and on again. It should now say your router forwards DuoBook. If it still says your router didn’t allow it, quit DuoBook Host and open it again (it also tries again by itself every two minutes).</li>
+        <li>Back in DuoBook Host, turn <strong>Access from anywhere</strong> off and on again. It should now say your router forwards DuoBook. If it still says your router isn’t forwarding DuoBook, quit DuoBook Host and open it again (it also tries again by itself every two minutes).</li>
         <li>That’s it: your iPhone finds your Mac’s address in your own iCloud and connects from anywhere. (It also learns it whenever it connects at home.)</li>
       </ol>
 
@@ -52,7 +52,7 @@
       <details><summary>Apple AirPort</summary>
         <p>NAT-PMP is on by default. To check: AirPort Utility → select your base station → Edit → Network → <strong>Enable NAT Port Mapping Protocol</strong>.</p></details>
       <details><summary>eero</summary>
-        <p>In the eero app: Settings → Network settings → Advanced settings → <strong>UPnP</strong>.</p></details>
+        <p>In the eero app: Settings → Advanced networking → <strong>UPnP</strong>. (Older versions of the app: Settings → Network settings → Advanced settings → UPnP.) If your eero plugs into your provider’s modem, also check that the modem isn’t a router too: see <a href="#two-routers">two routers</a>.</p></details>
       <details><summary>Google Nest Wifi and Google Wifi</summary>
         <p>In the Google Home app: Wi-Fi → Settings → Advanced networking → <strong>UPnP</strong>.</p></details>
       <details><summary>NETGEAR (Nighthawk, Orbi)</summary>
@@ -71,10 +71,27 @@
         <p>Go to <code>192.168.2.1</code> → Advanced tools and settings → <strong>UPnP</strong>.</p></details>
 
       <h2>Still not working?</h2>
-      <details><summary>You have two routers (your provider’s box plus your own)</summary>
-        <p>Then there are two routers in the way. Turn on UPnP on both, or set your provider’s box to <strong>bridge mode</strong> so only your own router is in charge. Your provider can help with bridge mode.</p></details>
-      <details><summary>Starlink, 5G home internet, or a shared address (CGNAT)</summary>
-        <p>Some providers share one internet address between many homes. Starlink and most 5G home internet plans (T-Mobile, Verizon and others) work this way, and some cable and fiber providers do too. Then no router setting can let DuoBook in. Ask your provider for a public IP address, or use a free VPN such as Tailscale on both your Mac and iPhone and type your Mac’s Tailscale address in DuoBook → Settings → Your Macs → your Mac → <strong>Direct address</strong>.</p></details>
+      <details id="upnp-on"><summary>UPnP is on, but it still doesn’t work</summary>
+        <p>Then something in front of your router is usually in the way: your router can only open a door in itself, not in another box between it and the internet. Find your router’s own internet address (its <strong>WAN</strong> or <strong>external</strong> IP, on its status page or in its app) and compare it with the address a “what is my IP” web search shows:</p>
+        <ul>
+          <li><strong>They match:</strong> your router is on the internet directly. Turn UPnP off and on again and restart the router (some routers’ UPnP stops working after an update until then), then turn Access from anywhere off and on in DuoBook Host. If that doesn’t help, <a href="#port-forward">forward the port yourself</a>.</li>
+          <li><strong>It starts with 192.168, 10, or 172.16 to 172.31:</strong> there’s a second router in front of yours. See <a href="#two-routers">two routers</a>.</li>
+          <li><strong>It starts with 100.64 to 100.127:</strong> your provider shares one address between many homes. See <a href="#cgnat">shared address</a>.</li>
+        </ul></details>
+      <details id="two-routers"><summary>You have two routers (your provider’s box plus your own)</summary>
+        <p>Many provider modems are routers too (a “gateway”, often with their own Wi-Fi). Plugged into one, your own router (an eero, Orbi, Deco, Google Wifi…) gets a private address, and UPnP on it can’t help: DuoBook Host only reaches the router it’s connected to, and the provider’s box blocks the way in front of it. A router you set to bridge mode behind your own (or used only for Wi-Fi) doesn’t count; what matters is the box between your router and the internet.</p>
+        <p>The fix is to let only one of them route: put your <strong>provider’s box in bridge mode</strong> (some call it modem mode, passthrough or IP passthrough; your provider can help), and keep UPnP on in your own router. Or put your own router in bridge mode (on eero: Settings → Advanced networking → DHCP &amp; NAT → Bridge) and turn on UPnP in the provider’s box instead. Turning UPnP on in both doesn’t help.</p>
+        <p>If neither can be bridged, <a href="#port-forward">forward the port</a> in both: in the provider’s box, port 7701 TCP to your router’s address, and in your router, port 7701 TCP to your Mac.</p></details>
+      <details id="cgnat"><summary>Starlink, 5G home internet, or a shared address (CGNAT)</summary>
+        <p>Some providers share one internet address between many homes. Starlink and most 5G home internet plans (T-Mobile, Verizon and others) work this way, and some cable and fiber providers do too. Then no router setting can let DuoBook in. Ask your provider for a public IP address (some give one for free on request), use <strong>DuoBook Anywhere</strong>, or use a free VPN such as Tailscale on both your Mac and iPhone and type your Mac’s Tailscale address in DuoBook → Settings → Your Macs → your Mac → Advanced → <strong>Direct address</strong>.</p></details>
+      <details id="port-forward"><summary>Forward the port yourself</summary>
+        <p>If UPnP won’t work, you can open the door by hand:</p>
+        <ol>
+          <li>In your router, give your Mac a fixed address (often called a <strong>reservation</strong> or DHCP reservation). On eero: Settings → Advanced networking → Reservations &amp; port forwarding → add your Mac. On a Mac using Wi-Fi, first set System Settings → Wi-Fi → Details → <strong>Private Wi-Fi address</strong> to Fixed (or Off), so your router keeps recognizing it.</li>
+          <li>Forward port <strong>7701</strong>, <strong>TCP</strong>, to your Mac. On eero: tap your Mac’s reservation → Open a port → 7701, TCP.</li>
+          <li>On your iPhone, in DuoBook → Settings → Your Macs → your Mac → Advanced → <strong>Direct address</strong>, type your home’s internet address (from a “what is my IP” search) followed by <code>:7701</code>, for example <code>203.0.113.24:7701</code>.</li>
+        </ol>
+        <p>DuoBook Host only sees doors it opened itself, so it keeps saying <em>Away from home stopped working</em>: that’s expected. If your provider changes your home’s address now and then, update the Direct address when connecting stops working. DuoBook Anywhere has neither problem.</p></details>
       <details><summary>There’s no UPnP or NAT-PMP setting</summary>
         <p>Some office and building networks don’t offer it. Use the VPN option above instead.</p></details>
 
