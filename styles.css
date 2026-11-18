@@ -90,3 +90,8 @@ img.shot { border-radius: var(--radius); box-shadow: 0 30px 80px rgba(0, 0, 0, 0
 .cta.center { justify-content: center; }
 #get { text-align: center; }
 #get .lede { margin: 0 auto; }
+
+/* The looks: a gallery of machines, four across (two on phones). */
+.looks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 24px; }
+.looks img { width: 100%; height: auto; margin: 0; border-radius: 14px; }
+@media (max-width: 820px) { .looks { grid-template-columns: repeat(2, 1fr); } }

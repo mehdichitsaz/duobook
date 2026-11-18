@@ -69,7 +69,8 @@ The website is plain HTML and CSS, served by GitHub Pages from the `main` branch
 | `support/` | Help and frequently asked questions |
 | `router/` | Guide to turning on UPnP for access from anywhere |
 | `privacy/` | Privacy policy |
-| `assets/` | Images and icons |
+| `assets/` | Images and icons (`assets/looks/`: the looks gallery on the home page) |
+| `robots.txt`, `sitemap.xml` | For search engines; add new pages to the sitemap |
 | `downloads/DuoBook-Host.dmg` | The signed, notarized Mac app |
 | `styles.css` | Styles for every page |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
